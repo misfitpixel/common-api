@@ -1,0 +1,14 @@
+{
+    "name": "misfitpixel/common-api",
+    "description": "Shared components for building APIs and microservices",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Brandin Chiu",
+            "email": "brandin@misfitpixel.io"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
