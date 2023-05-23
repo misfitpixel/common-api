@@ -10,5 +10,37 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "symfony/framework-bundle": "^5.4",
+        "symfony/orm-pack": "^2.3",
+        "misfitpixel/common-exceptions": "dev-main",
+        "misfitpixel/common-model": "dev-main",
+        "misfitpixel/common-auth": "dev-main",
+        "symfony/yaml": "^5.4"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/misfitpixel/common-exceptions.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/misfitpixel/common-model.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/misfitpixel/common-auth.git"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "autoload": {
+        "psr-4": { "MisfitPixel\\Common\\Api\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    }
 }
