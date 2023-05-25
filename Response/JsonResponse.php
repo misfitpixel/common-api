@@ -77,11 +77,6 @@ class JsonResponse extends \Symfony\Component\HttpFoundation\JsonResponse
          */
         $endpoint = explode('?', $request->getUri())[0];
 
-        /**
-         * TODO: this is a temporary fix until nginx configuration is updated.
-         */
-        $endpoint = preg_replace('/^http:/', 'https:', $endpoint);
-
         $prev = sprintf('%s?%s', $endpoint, http_build_query(array_merge($query, [
             'page' => $page - 1,
             'limit' => $limit

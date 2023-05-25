@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
+        "ext-json": "*",
         "symfony/framework-bundle": "^5.4",
         "symfony/orm-pack": "^2.3",
         "misfitpixel/common-exceptions": "dev-main",
