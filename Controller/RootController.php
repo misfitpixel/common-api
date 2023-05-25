@@ -18,6 +18,9 @@ class RootController extends AbstractController
      */
     public function root(): JsonResponse
     {
+        /**
+         * TODO: allow version override via headers.
+         */
         $version = shell_exec('git describe --tags `git rev-list --tags --max-count=1`');
         $documentationUrl = null;
         $message = null;
