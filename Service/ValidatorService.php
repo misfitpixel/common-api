@@ -1,6 +1,6 @@
 <?php
 
-namespace MisfitPixel\Common\API\Service;
+namespace MisfitPixel\Common\Api\Service;
 
 
 use MisfitPixel\Common\Exception;

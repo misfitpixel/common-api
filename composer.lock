@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37cc5d526bef0de43c026363df92b818",
+    "content-hash": "4a7fe8cebc85653603a0b1884aeb7d5b",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -2097,15 +2097,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/misfitpixel/common-model.git",
-                "reference": "da9f0742f7fdef34440667b0b17c7f1ac8858649"
+                "reference": "ab28d32e5ddcc33ee23dbe1a10258263a5d5ff08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/misfitpixel/common-model/zipball/da9f0742f7fdef34440667b0b17c7f1ac8858649",
-                "reference": "da9f0742f7fdef34440667b0b17c7f1ac8858649",
+                "url": "https://api.github.com/repos/misfitpixel/common-model/zipball/ab28d32e5ddcc33ee23dbe1a10258263a5d5ff08",
+                "reference": "ab28d32e5ddcc33ee23dbe1a10258263a5d5ff08",
                 "shasum": ""
             },
             "require": {
+                "doctrine/doctrine-bundle": "2.6.4",
                 "misfitpixel/common-exceptions": "dev-main",
                 "php": ">=7.4",
                 "symfony/framework-bundle": "^5.4",
@@ -5825,7 +5826,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-json": "*"
+    },
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.4"
