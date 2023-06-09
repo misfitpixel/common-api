@@ -2005,12 +2005,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/misfitpixel/common-auth.git",
-                "reference": "5ac416298eff7c76d5823442142fcc81e8720a39"
+                "reference": "b9cad8edf0981123c0fccc2b7c64002b00844d52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/misfitpixel/common-auth/zipball/5ac416298eff7c76d5823442142fcc81e8720a39",
-                "reference": "5ac416298eff7c76d5823442142fcc81e8720a39",
+                "url": "https://api.github.com/repos/misfitpixel/common-auth/zipball/b9cad8edf0981123c0fccc2b7c64002b00844d52",
+                "reference": "b9cad8edf0981123c0fccc2b7c64002b00844d52",
                 "shasum": ""
             },
             "require": {
@@ -2046,7 +2046,7 @@
             "support": {
                 "source": "https://github.com/misfitpixel/common-auth/tree/main"
             },
-            "time": "2023-06-09T00:41:04+00:00"
+            "time": "2023-06-09T00:48:03+00:00"
         },
         {
             "name": "misfitpixel/common-foundation",
