@@ -16,6 +16,8 @@ use Symfony\Component\HttpFoundation\RequestStack;
  */
 abstract class BaseController extends AbstractController
 {
+    const DEFAULT_PAGE_SIZE = 50;
+
     /** @var ManagerRegistry  */
     private ManagerRegistry $manager;
 
@@ -64,7 +66,7 @@ abstract class BaseController extends AbstractController
      * @param int $limit
      * @return int
      */
-    public function getLimit(Request $request, int $limit = 50): int
+    public function getLimit(Request $request, int $limit = self::DEFAULT_PAGE_SIZE): int
     {
         return $request->query->has('limit') ? $request->query->get('limit') : $limit;
     }
@@ -74,7 +76,7 @@ abstract class BaseController extends AbstractController
      * @param int $limit
      * @return int
      */
-    public function getOffset(Request $request, int $limit = 50): int
+    public function getOffset(Request $request, int $limit = self::DEFAULT_PAGE_SIZE): int
     {
         return ($this->getPage($request) - 1) * $this->getLimit($request, $limit);
     }

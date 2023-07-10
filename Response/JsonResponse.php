@@ -3,6 +3,7 @@
 namespace MisfitPixel\Common\Api\Response;
 
 
+use MisfitPixel\Common\Api\Controller\Abstraction\BaseController;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -63,7 +64,7 @@ class JsonResponse extends \Symfony\Component\HttpFoundation\JsonResponse
          * set query.
          */
         $page = ($request->query->has('page')) ? $request->query->get('page') : 1;
-        $limit = ($request->query->has('limit')) ? $request->query->get('limit') : 10;
+        $limit = ($request->query->has('limit')) ? $request->query->get('limit') : BaseController::DEFAULT_PAGE_SIZE;
 
         $request->query->remove('page');
         $request->query->remove('limit');
